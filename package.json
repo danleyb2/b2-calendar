@@ -1,0 +1,34 @@
+{
+  "name": "@danleyb2/web-component",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danleyb2/web-component.git"
+  },
+  "version": "0.0.6",
+  "main": "dist/es6-unbundled/index.js",
+  "scripts": {
+    "start": "polymer serve",
+    "test": "polymer test --npm",
+    "prepublishOnly": "gulp build"
+  },
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "2.4.0",
+    "lit-element": "2.2.1",
+    "polymer-build": "^3.1.4"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "eslint": "^5.15.1",
+    "eslint-config-google": "^0.12.0",
+    "eslint-plugin-html": "^5.0.3",
+    "wct-browser-legacy": "^1.0.1",
+    "polymer-cli": "latest",
+    "@polymer/test-fixture": "^4.0.1",
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-replace": "^1.0.0",
+    "merge-stream": "^2.0.0"
+  }
+}
