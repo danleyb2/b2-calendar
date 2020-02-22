@@ -1,11 +1,11 @@
 {
-  "name": "@danleyb2/web-component",
+  "name": "@danleyb2/b2-calendar",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danleyb2/web-component.git"
+    "url": "https://github.com/danleyb2/b2-calendar.git"
   },
-  "version": "0.0.6",
+  "version": "0.0.1",
   "main": "dist/es6-unbundled/index.js",
   "scripts": {
     "start": "polymer serve",

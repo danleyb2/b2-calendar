@@ -1,6 +1,6 @@
 import { LitElement,css, html } from 'lit-element';
 
-class WebComponent extends LitElement {
+class B2Calendar extends LitElement {
   static get properties() {
     return { name: { type: String } };
   }
@@ -31,10 +31,6 @@ class WebComponent extends LitElement {
     firstUpdated() {
 
     }
-
-
-
-
 }
 
-customElements.define('web-component', WebComponent);
+customElements.define('b2-calendar', B2Calendar);
