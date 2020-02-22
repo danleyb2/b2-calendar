@@ -12,12 +12,12 @@ Calendar Web Component
 1. load module
     ```html
     <!-- Bottom of body -->
-    <script type="module" src="https://unpkg.com/@danleyb2/web-component"></script>
+    <script type="module" src="https://unpkg.com/@danleyb2/b2-calendar"></script>
     ```
 2. use component
     ```html
     
-    <web-component></web-component>
+    <b2-calendar></b2-calendar>
     
     ```
 
