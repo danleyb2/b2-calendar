@@ -4,12 +4,11 @@ import {LitElement, css, html} from 'lit-element';
 
 class B2Calendar extends LitElement {
   static get properties() {
-    return {name: {type: String}};
+    return {selectedDate: {type: String}};
   }
 
   constructor() {
     super();
-    this.name = 'World';
   }
 
   static get styles() {
@@ -276,9 +275,8 @@ class B2Calendar extends LitElement {
         // var picked = this.shadowRoot.querySelectorAll('[data-calendar-label="picked"]')[0];
         // picked.innerHTML = this.dataset.calendarDate;
         // console.log(this.dataset.calendarDate);
-
-        console.log(event.currentTarget.dataset);
-
+        this.selectedDate = event.currentTarget.dataset.calendarDate;
+        console.log(this.selectedDate);
         _this.removeActiveClass();
         event.currentTarget.classList.add('vcal-date--selected');
       });
