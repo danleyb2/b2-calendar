@@ -272,9 +272,7 @@ class B2Calendar extends LitElement {
       '[data-calendar-status="active"]'
     );
     for (var i = 0; i < this.activeDates.length; i++) {
-
       this.activeDates[i].addEventListener('click', (event) => {
-
         // var picked = this.shadowRoot.querySelectorAll('[data-calendar-label="picked"]')[0];
         // picked.innerHTML = this.dataset.calendarDate;
         // console.log(this.dataset.calendarDate);
@@ -283,7 +281,6 @@ class B2Calendar extends LitElement {
 
         _this.removeActiveClass();
         event.currentTarget.classList.add('vcal-date--selected');
-
       });
     }
   }
