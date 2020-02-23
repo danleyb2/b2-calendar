@@ -4,7 +4,10 @@ import {LitElement, css, html} from 'lit-element';
 
 class B2Calendar extends LitElement {
   static get properties() {
-    return {selectedDate: {type: String}};
+    return {
+      selectedDate: {type: String},
+      startDate: {type: String, attribute: 'start-date'},
+    };
   }
 
   constructor() {
@@ -209,9 +212,17 @@ class B2Calendar extends LitElement {
     this.next= this.shadowRoot.querySelectorAll('[data-calendar-toggle="next"]')[0];
     this.previous= this.shadowRoot.querySelectorAll('[data-calendar-toggle="previous"]')[0];
     this.label= this.shadowRoot.querySelectorAll('[data-calendar-label="month"]')[0];
-    this. activeDates=null;
-    this.date= new Date();
-    this.todaysDate= new Date();
+    this.activeDates=null;
+
+    if (this.startDate) {
+      // Initial Calendar date
+      this.date = new Date(this.startDate);
+      this.todaysDate = new Date(this.startDate);
+    } else {
+      this.date = new Date();
+      this.todaysDate = new Date();
+    }
+
     this.options = {
       disablePastDays: true,
     };
